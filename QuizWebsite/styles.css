@@ -1,0 +1,222 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+  
+  body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://resi.ze-robot.com/dl/4k/4k-desktop-wallpaper.-1920%C3%971200.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background: -webkit-linear-gradient(rgb(0, 59, 253), rgba(215, 219, 3, 0.623)); 
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+  
+
+  
+  
+  .percent {
+    margin-top: 7px;
+  }
+  
+  .modal-text-bigger {
+    font-size: 26px;
+    color: rgb(255, 238, 0);
+    margin-bottom: 10px;
+  }
+  
+  .count {
+    font-weight: bold;
+  }
+  
+  
+  .number-of-question-text {
+    margin-bottom: 20px;
+    color: rgb(82, 31, 31);
+  }
+  
+  .number-of-question-text::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(9, 199, 56); 
+  }
+  
+  
+  
+  #question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    color: rgb(82, 31, 31);
+  }
+  
+  .btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    border: 1px solid rgba(51, 61, 194, 0.3); 
+    width: 50%; 
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 50px;
+    line-height: 21px;
+    text-align: left;
+    transition-duration: 1s;
+  }
+  
+  .btn:hover {
+    background-color: #d8eaec;
+    transition-duration: 1s;
+  }
+  
+  .btn:not(:first-child) {
+    margin-top: 25px;
+  }
+  
+  .btn.correct {
+    background-color: rgb(0, 126, 48);
+    color: #ffffff;
+  }
+  
+  .btn.wrong {
+    background-color: rgb(197, 59, 59);
+    color: #ffffff;
+  }
+  
+  /*Prevent multiclicking the buttons*/
+  .no-click {pointer-events: none;}
+  
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+  
+.start-btn, .next-btn {
+    font-size: 25px;
+    color: #058625;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 238, 0);
+    border-radius: 10px;
+    font-style:italic;
+    border-style: none;
+    cursor: pointer;
+    transition-duration: 1s;
+  }
+  
+  .start-btn:hover, .next-btn:hover {
+    color: rgb(255, 238, 0);
+    background-color: #058625;
+    transition-duration: 1s;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @media screen and (min-width:700px){
+    body {
+        font-size: 1em;
+    }
+  
+    .logo {
+        display: block;
+        width: 25%;
+    }
+  
+    .info {
+        width: 75%;
+    }
+  
+    .menu {
+        width: 25%;
+    }
+  
+    .content {
+        width: 100%;
+    }
+    
+  
+  
+    p.main-text {
+        font-size: 1.0em;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 10px;
+  
+    }
+  
+  
+    p.theme {
+        font-size: 1.1em;
+        margin-top: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 5px;
+    }
+  
+    .footer {
+        margin-top: 80px;
+    }
+  
+    .container-video {
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    }
+  
+    .just-image {
+        display: block;
+        margin-top: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+  
+    .image-sign {
+        margin-bottom: 30px;
+    }
+  
+    .test-list {
+      margin: 70px 40px;
+    }
+  
+    .wrapper {
+      margin: 70px 40px;
+    }
+  
+    .btn {
+      font-size: 16px;
+    }
+  
+    #question {
+      font-size: 21px;
+    }
+  
+  }
+  
+  
+  @media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  
